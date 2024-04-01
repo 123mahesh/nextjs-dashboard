@@ -31,6 +31,11 @@ export type Revenue = {
   revenue: number;
 };
 
+export type Item = {
+  item: number;
+  item_name: string;
+};
+
 export type LatestInvoice = {
   id: string;
   name: string;

@@ -8,8 +8,22 @@ import {
   LatestInvoiceRaw,
   User,
   Revenue,
+  Item
 } from './definitions';
 import { formatCurrency } from './utils';
+
+export async function fetchItems() {
+
+  noStore(); //dont cache
+  try{
+    const data = await sql<Item>`SELECT * FROM item_master`;
+    return data.rows;
+  }catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch revenue data.');
+  }
+  
+}
 
 export async function fetchRevenue() {
   // Add noStore() here to prevent the response from being cached.
