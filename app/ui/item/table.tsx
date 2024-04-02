@@ -18,6 +18,27 @@ export default async function ItemTable() {
                 <th scope="col" className="px-3 py-5 font-medium">
                   Item Name
                 </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Item Link
+                </th>
+                <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
+                  Brand
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Category
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Sub Category
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Gender
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Age group
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Unit
+                </th>
               </tr>
         </thead>  
         <tbody className="bg-white">
@@ -32,6 +53,27 @@ export default async function ItemTable() {
                 <td className="whitespace-nowrap px-3 py-3">
                     {item.item_name}
                 </td>  
+                <td className="whitespace-nowrap py-3 pl-6 pr-3">
+                    {item.item_link}
+                </td>  
+                <td className="whitespace-nowrap px-3 py-3">
+                    {item.brand}
+                </td> 
+                <td className="whitespace-nowrap py-3 pl-6 pr-3">
+                    {item.category}
+                </td>  
+                <td className="whitespace-nowrap px-3 py-3">
+                    {item.sub_category}
+                </td> 
+                <td className="whitespace-nowrap py-3 pl-6 pr-3">
+                    {item.gender}
+                </td>  
+                <td className="whitespace-nowrap px-3 py-3">
+                    {item.age_group}
+                </td> 
+                <td className="whitespace-nowrap px-3 py-3">
+                    {item.unit}
+                </td> 
             </tr>
                 
         ))}

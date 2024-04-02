@@ -34,6 +34,14 @@ export type Revenue = {
 export type Item = {
   item: number;
   item_name: string;
+  item_link: string;
+  brand: string;
+  category: string;
+  sub_category: string;
+  gender: number;
+  age_group: number;
+  unit: number;
+
 };
 
 export type LatestInvoice = {
