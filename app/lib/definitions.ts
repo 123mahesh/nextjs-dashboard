@@ -41,7 +41,22 @@ export type Item = {
   gender: number;
   age_group: number;
   unit: number;
+  item_thumbnail_path: string;
+};
 
+export type gender = {
+  id: number;
+  gender: string;
+};
+
+export type age_group = {
+  id: number;
+  age_group: string;
+};
+
+export type unit = {
+  id: number;
+  unit: string;
 };
 
 export type LatestInvoice = {
@@ -92,6 +107,7 @@ export type CustomerField = {
   id: string;
   name: string;
 };
+
 
 export type InvoiceForm = {
   id: string;

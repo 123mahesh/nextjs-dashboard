@@ -24,6 +24,17 @@ export function UpdateInvoice({ id }: { id: string }) {
   );
 }
 
+export function UpdateItem({ item }: { item: number }) {
+  return (
+    <Link
+      href={`/dashboard/item/${item}/edit`}
+      className="rounded-md border p-2 hover:bg-gray-100"
+    >
+      <PencilIcon className="w-5" />
+    </Link>
+  );
+}
+
 export function DeleteInvoice({ id }: { id: string }) {
   return (
     <>
